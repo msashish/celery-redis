@@ -19,6 +19,11 @@
     
 ## Code with celery and redis
 
+    Create a Celery app by providing (refer to celery_config.py)
+            1) it a name  
+            2) A broker URL where task can be sent 
+            3) code that should be copied by workers (or set of code for each worker)
+            
     [Main Application] ----celery----> [write tasks to redis]
     [Celery workers] <----read---- [tasks inside redis]
     
@@ -38,7 +43,7 @@
             
     Terminal-3: Execute hit_urls.py from celery
             python hit_urls_with_celery.py
-            (It took overall 5, 5, 5 seconds for 3 runs)
+            (It took overall < 5 seconds for 3 runs)
             
 ## Points to note:
     
