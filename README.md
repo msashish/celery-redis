@@ -6,7 +6,7 @@
     
     # activate virtuelenv 
     pipenv shell
-    Note that its created in /Users/sheelava/.local/share/virtualenvs/celery-redis-kb0Bn8Kl/bin/python. Add to project interpreter.
+    Note that its created in $home/.local/share/virtualenvs/celery-redis-kb0Bn8Kl/bin/python. Add to project interpreter.
     
 ## Install celery and redis (message broker or a queue where we will add/store tasks)
     
